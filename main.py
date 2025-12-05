@@ -24,4 +24,5 @@ def main():
 			print(f"{character_dict["char"]}: {character_dict["count"]}")
 	print("============= END ===============")
 
+
 main()
