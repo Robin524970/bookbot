@@ -16,13 +16,12 @@ def char_count(content):
 			char_dict[ch] = 1
 	return char_dict
 
+def sort_on(dictionary):
+	return dictionary["num"]
 
-def sort_on(dict_list):
-	return dict_list["count"]
-
-def dict_list(dictionary):
+def sort_dict(dictionary):
 	new_list = list()
 	for ch, count in dictionary.items():
-		new_list.append({"char": ch, "count": count})
+		new_list.append({"char": ch, "num": count})
 	new_list.sort(reverse=True, key=sort_on)
 	return new_list
